@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to left, #4de4ec, #43bfea, #4de4ec);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+
+.input-area select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.actions input[type="checkbox"] {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#addButton {
+    background-color: #ff7043;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    background: white;
+    color: #333;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-text {
+    flex: 1;
+    text-align: left;
+    word-break: break-word;
+}
+
+.actions {
+    display: flex;
+    gap: 5px;
+}
+
+.complete-btn {
+    background-color: #00c853;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: #ff3d00;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.info-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    animation: slideInTop 1.5s ease forwards;
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.clock {
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 5em;
+}
+
+.weather {
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    padding-right: 5em;
+}
+
+.weather img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+h1{
+    margin-top: 3rem;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 0 1rem;
+    border-bottom: 2px solid #1a1a1a;
+    background: linear-gradient(90deg, #00dbde, #fc00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
